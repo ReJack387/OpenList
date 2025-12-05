@@ -163,9 +163,11 @@ func (d *Pan123) login() error {
 		SetHeaders(map[string]string{
 			"origin":      "https://www.123pan.com",
 			"referer":     "https://www.123pan.com/",
-			"user-agent":  "Dart/2.19(dart:io)-openlist",
-			"platform":    "web",
+			"user-agent": "123pan/v2.4.0(Android_11;Xiaomi)",
+			"platform":    "android",
 			"app-version": "3",
+			"devicetype": "2405CRPFDL",
+			"devicename": "Xiaomi"
 			//"user-agent":  base.UserAgent,
 		}).
 		SetBody(body).Post(SignIn)
