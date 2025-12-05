@@ -167,7 +167,7 @@ func (d *Pan123) login() error {
 			"platform":    "android",
 			"app-version": "3",
 			"devicetype": "2405CRPFDL",
-			"devicename": "Xiaomi"
+			"devicename": "Xiaomi",
 			//"user-agent":  base.UserAgent,
 		}).
 		SetBody(body).Post(SignIn)
